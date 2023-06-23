@@ -1,0 +1,9 @@
+.input {
+    outline: none;
+    border: 1px solid teal;
+    height: 100%;
+    width: 100%;
+    padding: 10px 15px;
+    margin: 0 0 5px;
+    color: #000;
+}

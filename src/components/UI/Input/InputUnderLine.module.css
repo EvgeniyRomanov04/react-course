@@ -1,0 +1,61 @@
+.input-underline {
+    margin: 30px 0 0;
+    position: relative;
+    padding: 10px 20px;
+    background: #fff;
+    font-size: 16px;
+    color: #000;
+}
+
+.input-underline input {
+    outline: none;
+    border: none;
+}
+
+.input-underline label {
+    font-size: 16px;
+    font-weight: 500;
+    color: #333;
+    position: absolute;
+    top: 50%;
+    left: 20px;
+    transform: translateY(-50%);
+    transition: all 0.3s;
+}
+
+.input-underline input:focus~label,
+.input-underline input:not([value=''])~label {
+    font-size: 14px;
+    top: 0px;
+    color: blue;
+}
+
+.input-underline input~span:before {
+    content: '';
+    display: block;
+    position: absolute;
+    bottom: 0px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: calc(100% - 40px);
+    height: 1px;
+    background: #333;
+}
+
+.input-underline input~span:after {
+    content: '';
+    display: block;
+    position: absolute;
+    bottom: 5px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 0;
+    height: 2px;
+    background: blue;
+    transition: all 0.3s;
+}
+
+.input-underline input:focus~span:after,
+.input-underline input:not([value=''])~span:after {
+    width: calc(100% - 40px);
+}

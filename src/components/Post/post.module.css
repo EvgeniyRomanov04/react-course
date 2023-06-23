@@ -1,0 +1,13 @@
+.list {
+    width: 100%;
+}
+
+.post {
+    width: 100%;
+    margin: 10px 0 0;
+    padding: 15px;
+    border: 2px solid teal;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
